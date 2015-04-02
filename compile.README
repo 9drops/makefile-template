@@ -1,0 +1,13 @@
+1.编译前先执行source project.env命令使Makefile中的环境变量生效
+2.Makefile中变量说明
+	NAME              - 目标文件名字
+	BUILD_TARGET_TYPE - 生成的目标文件类型,“dll为动态库 static为静态库 exee为可执行文件
+	BINDIR            - 生成的目标文件存放的路径
+	INCDIR            - .h头文件路径
+	SRC               - 源文件
+	STATIC_LINKS_WITH - 需要链接的静态库
+	DYN_LINKS_WITH    - 需要链接的动态库
+
+3.make - 生成动态库和可执行文件
+  make release - 生成项目最新版本文件"release.svn版本号.tar.gz"
+  压缩包中文件"md5.list.svn版本号"记录发布文件md5值
